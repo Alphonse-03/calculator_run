@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+   
+
+</head>
+<body>
+    
+
+                <form action="calc" method="POST">
+                    {% csrf_token %}
+                    
+                            Num 1 <input type="text" name="num1" placeholder="Number 1"><br>
+                     
+                        
+                        Num 2 <input type="text" name="num2" placeholder="Number 2"><br>
+                   
+                            <input type="submit" name="add" value="add">
+                        <input type="submit" name="sub" value="sub">
+                   
+                             <input type="submit" name="mul" value="mul">
+                        
+                        <input type="submit" name="div" value="div">
+                    
+             </form>
+        
+       {% block content%}
+       {% endblock %}
+
+
+    </form>
+    <p>Made with 💖 by Alphonse Prakash</p>
+
+</body>
+</html>
